@@ -14,6 +14,9 @@ state={
 
   render() {
     return (
+      <div>
+        <Nav />
+        <Jumbotron />
       <Wrapper>
         {this.state.kawaii.map(sanrio => (
           <SanrioCard
@@ -22,6 +25,7 @@ state={
           />
         ))}
       </Wrapper>
+      </div>
     );
   }
 }

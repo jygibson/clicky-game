@@ -1,0 +1,24 @@
+.navbar {
+    background-color: #ffedef;
+    margin-bottom: 0;
+    height: 50px;
+}
+
+#nav-img{
+    width: 5%;
+    height: auto;
+    margin-left: 5px;
+    margin-top:5px;
+}
+
+br {
+    height: 1px;
+    margin: 0;
+}
+
+p {
+    font-size: 8px;
+    margin-top:2px;
+    margin-left:5px;
+    font-family: 'Handlee', cursive;
+}

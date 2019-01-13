@@ -5,7 +5,7 @@ function SanrioCard(props) {
     return (
         <div className="card">
         <div className="img-container">
-        <img alt="sanrio" src={props.image} />
+        <img alt="sanrio" src={props.image} id="img-tile" />
         </div>
         </div>
     );
