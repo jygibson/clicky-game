@@ -1,0 +1,50 @@
+[
+    {
+        "image": "https://pbs.twimg.com/profile_images/553014757037322240/VhIzHhkV_400x400.png",
+        "key": 0
+    },
+    {
+        "image": "https://i.pinimg.com/originals/ef/40/e4/ef40e47fe5dbf1ec980dff0338761290.jpg",
+        "key": 1
+    },
+    {
+        "image": "https://i.pinimg.com/originals/b3/de/80/b3de80388f9b0e736ddc5a1a2715ceb9.png",
+        "key": 2
+    },
+    {
+        "image":"https://www.sanrio.com/media/W1siZiIsIjIwMTYvMDYvMDkvMTgvMTEvMjQvNTgyL01NX3BhcmFzb2xfU1RBVElDLmdpZiJdXQ/MM_parasol_STATIC.gif?sha=d99ffca33d47c5e1",
+        "key": 3
+    },
+    {
+        "image":"https://vignette.wikia.nocookie.net/thesanrio/images/3/38/Pochacco.png/revision/latest?cb=20111202182225",
+        "key": 4
+    },
+    {
+        "image": "https://vignette.wikia.nocookie.net/hellokitty/images/5/5b/Sanrio_Characters_Cinnamoroll_Image026.png/revision/latest?cb=20170520011552",
+        "key": 5
+    },
+    {
+        "image": "https://vignette.wikia.nocookie.net/sanrio/images/3/3a/Images_%2819%29.jpg/revision/latest?cb=20170729170958",
+        "key": 6
+    },
+    {
+        "image":"https://www.sanrio.com/media/W1siZiIsIjIwMTYvMDYvMTMvMjEvMzEvNTMvMzEzL0NPX2NvZmZlZV9TVEFUSUMuZ2lmIl1d/CO_coffee_STATIC.gif?sha=8aed0ed774755a6d",
+        "key": 7
+    },
+    {
+        "image":"https://vignette.wikia.nocookie.net/hellokitty/images/9/97/Sanrio_Characters_Hummingmint_Image003.png/revision/latest?cb=20170403193234",
+        "key": 8
+    },
+    {
+        "image":"https://vignette.wikia.nocookie.net/sanrio/images/7/71/Tuxedo_Sam.gif/revision/latest?cb=20130406171925",
+        "key": 9
+    },
+    {
+        "image":"https://sanrio-production-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzAvMTQvMTgvMjEvODQ5L1BBX0JMT0dfNzQyeDc0Mi5qcGciXSxbInAiLCJ0aHVtYiIsIjMwMHgzMDAjIl1d/PA_BLOG_742x742.jpg?sha=c643e049e66be268",
+        "key": 10
+    },
+    {
+        "image":"https://sanrio-production-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDYvMjYvMTkvMDcvMTYvNjUzL2dhbWVfYmFubmVyMl9vbV90aHVtYi5qcGciXV0/game-banner2-om-thumb.jpg?sha=b64317c4a55d3482",
+        "key": 11
+    }
+]
