@@ -23,21 +23,17 @@ class App extends Component {
     return kawaii;
   };
 
-  handleClickEvent = event => {
-    event.preventDefault();
+  // this.kawaii.shuffle()
+
+  handleClickEvent = () => {
     var score = 0;
     var topScore = 0;
-    this.state.clicked === false ? score++ : this.kawaii.shuffle();
-    this.clicked();
-    document.getElementById("#score").textContent(score);
+    console.log(score)
+    this.state.unclicked === true ? score++ : console.log("already been clicked")
+    console.log(score)
+    this.setState({ unclicked:false })
   }
 
-  clicked = id => {
-    this.setState({
-      [id]: this.key,
-      clicked: true
-    });
-  };
 
   render() {
     return (
@@ -46,7 +42,8 @@ class App extends Component {
         <Jumbotron />
         <Wrapper>
           {kawaii.map(sanrio => (
-            < SanrioCard SanrioTile={kawaii} onClick={this.handleClickEvent.bind}
+            < SanrioCard
+              onClick={this.handleClickEvent}
               key={sanrio.key}
               image={sanrio.image}
             />

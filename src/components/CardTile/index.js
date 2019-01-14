@@ -16,11 +16,12 @@ const SanrioCard = props => {
 const createState = (Component, initialState) => class extends React.Component {
     constructor(props) {
       super(props);
-      this.state = initialState;
+      this.state = {
+        unclicked: initialState};
     }
     render() {
       return <Component {...this.props} state={this.state} setState={this.setState.bind(this)} />;
     }
   };
 
-export default createState(SanrioCard, "unclicked");
+export default createState(SanrioCard, true);
