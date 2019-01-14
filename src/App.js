@@ -19,26 +19,24 @@ class App extends Component {
       t = kawaii[m];
       kawaii[m] = kawaii[i];
       kawaii[i] = t;
-    }
-
+    };
     return kawaii;
   };
 
- handleClickEvent = event => {
-   event.preventDefault();
+  handleClickEvent = event => {
+    event.preventDefault();
     var score = 0;
     var topScore = 0;
-    this.state.clicked === false ? score++ : this.shuffle();
+    this.state.clicked === false ? score++ : this.kawaii.shuffle();
     this.clicked();
+    document.getElementById("#score").textContent(score);
   }
 
-  clicked() {
-    this.setState({ clicked: true });
-  };
-
-  state = {
-    kawaii,
-    clicked: false
+  clicked = id => {
+    this.setState({
+      [id]: this.key,
+      clicked: true
+    });
   };
 
   render() {
@@ -47,8 +45,8 @@ class App extends Component {
         <Navbar />
         <Jumbotron />
         <Wrapper>
-          {this.state.kawaii.map(sanrio => (
-            <SanrioCard onClick={this.handleClickEvent}
+          {kawaii.map(sanrio => (
+            < SanrioCard SanrioTile={kawaii} onClick={this.handleClickEvent.bind}
               key={sanrio.key}
               image={sanrio.image}
             />
@@ -58,5 +56,6 @@ class App extends Component {
     );
   };
 }
+
 
 export default App;

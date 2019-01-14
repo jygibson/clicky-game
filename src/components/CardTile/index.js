@@ -1,7 +1,9 @@
 import React from 'react';
-import "./style.css"
+import "./style.css";
 
-function SanrioCard(props) {
+
+
+const SanrioCard = props => {
     return (
         <div className="card">
         <div className="img-container">
@@ -11,4 +13,14 @@ function SanrioCard(props) {
     );
 }
 
-export default SanrioCard;
+const createState = (Component, initialState) => class extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = initialState;
+    }
+    render() {
+      return <Component {...this.props} state={this.state} setState={this.setState.bind(this)} />;
+    }
+  };
+
+export default createState(SanrioCard, "unclicked");
