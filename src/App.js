@@ -9,32 +9,33 @@ import './App.css';
 
 class App extends Component {
 
-  shuffle() {
-    var m = kawaii.length, t, i;
-    // While there remain elements to shuffle…
-    while (m) {
-      // Pick a remaining element…
-      i = Math.floor(Math.random() * m--);
-      // And swap it with the current element.
-      t = kawaii[m];
-      kawaii[m] = kawaii[i];
-      kawaii[i] = t;
+  constructor( props ){
+    super( props )
+      this.state = {
+
+      }
     };
-    return kawaii;
-  };
+
+  
+
+  // shuffle() {
+  //   var m = kawaii.length, t, i;
+  //   // While there remain elements to shuffle…
+  //   while (m) {
+  //     // Pick a remaining element…
+  //     i = Math.floor(Math.random() * m--);
+  //     // And swap it with the current element.
+  //     t = kawaii[m];
+  //     kawaii[m] = kawaii[i];
+  //     kawaii[i] = t;
+  //   };
+  //   return kawaii;
+  // };
 
   // this.kawaii.shuffle()
 
-  handleClickEvent = () => {
-    var score = 0;
-    var topScore = 0;
-    console.log(score)
-    this.state.unclicked === true ? score++ : console.log("already been clicked")
-    console.log(score)
-    this.setState({ unclicked:false })
-  }
 
-
+ 
   render() {
     return (
       <div>
@@ -43,7 +44,8 @@ class App extends Component {
         <Wrapper>
           {kawaii.map(sanrio => (
             < SanrioCard
-              onClick={this.handleClickEvent}
+              shuffle={this.shuffle}
+              handleClickEvent={this.handleClickEvent}
               key={sanrio.key}
               image={sanrio.image}
             />
@@ -53,6 +55,7 @@ class App extends Component {
     );
   };
 }
+
 
 
 export default App;
