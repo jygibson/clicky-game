@@ -1,3 +1,7 @@
+Clicky Game is another homework assignment for my coding boot camp. It is not yet perfectly functional and needs to be completed. When you click a tile for the the first time, you gain a point, and all the tiles shuffle. You continue clicking until you reach a score of 12! But, do not click the same tile twice, or you will lose the game. 
+
+This was created using React
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
